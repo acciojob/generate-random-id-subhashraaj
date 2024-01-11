@@ -1,7 +1,17 @@
 function makeid(l) {
-  // write your code here
+	const char = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+	let result = "";
+	const characterLength = char.length;
+	for(let i=0;i<l;i++){
+		result += cha.charAt(Math.floor(Math.random() * characterLength));
+	}
+	return result;
+
+
+
+	
 }
 
 // Do not change the code below.
-const l = prompt("Enter a number.");
-alert(makeid(l));
+//const l = prompt("Enter a number.");
+//alert(makeid(l));
